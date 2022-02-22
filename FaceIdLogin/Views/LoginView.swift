@@ -39,6 +39,7 @@ struct LoginView: View {
                         )
                 }
                 .textInputAutocapitalization(.never)
+                .keyboardType(.emailAddress)
                 .padding(.top,20)
             SecureField("Password",text: $loginModel.password)
                 .padding()
